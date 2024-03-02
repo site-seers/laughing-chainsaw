@@ -27,8 +27,9 @@ h6 {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: white;
   transition: all 0.3s ease;
+  top: 0; 
 }
 
 .tm-navbar.scroll {
