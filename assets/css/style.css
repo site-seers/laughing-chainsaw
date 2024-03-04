@@ -399,31 +399,49 @@ section {
   margin-bottom: 0;
 }
 
-
-.programs .card{
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding: 20px;
-  margin: 20px;
-  margin-left: auto;
-  width: 550px;
-  height: 200px;
-
-}
-
-.programs .row{
-  width:33.3%;
-
-
-}
-
-.programs .cards-container{
+/*PROGRAM SECTION*/
+.cards-container {
+  width: 85%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-start; 
+  margin: auto;
+}
+
+.row {
+  width: 100%; 
+}
+
+.card {
+  flex: 0 0 calc(30% - 20px); 
+  margin: 10px;
+  margin-bottom: 20px;
+  
 
 }
 
+/* Media queries for responsiveness */
+
+/* For screen sizes between 1280x720 and 1920x1080 */
+@media screen and (max-width: 1920px) {
+  .card {
+    flex: 0 0 calc(33.33% - 20px); /* Three cards per row for desktops */
+  }
+}
+
+/* For screen sizes between 601x962 and 1280x800 */
+@media screen and (max-width: 1280px) {
+  .card {
+    flex: 0 0 calc(50% - 20px); /* Two cards per row for tablets */
+  }
+}
+
+/* For screen sizes between 360x640 and 414x896 */
+@media screen and (max-width: 414px) {
+  .card {
+    flex: 0 0 calc(100% - 20px); /* One card per row for mobiles */
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
